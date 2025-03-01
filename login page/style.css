@@ -1,0 +1,117 @@
+
+
+
+body{
+    background-image: url("sohil.jpg");
+    background-size: cover;
+}
+.navbar{ 
+    
+     
+    background-color: rgb(25, 21, 21);    
+    border-radius: 15px;                         
+    
+}
+.navbar ul{
+        overflow: auto;
+
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 21px 15px;
+  
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.navbar li a:hover{
+    color: blue;
+
+    
+}
+.search{
+    padding: 15px;
+    color: whitesmoke;
+    float: right;
+    margin: auto;
+}   
+.btn{
+    border: 2px solid rgb(215, 215, 108);
+    border-radius: 11px;
+    margin: 5px;
+    padding: 3px 17px;
+    
+}
+.btn:hover{
+    color: rgb(51, 151, 238);
+}
+.navbar input{
+    border: 3px solid rgb(215, 215, 108);
+    border-radius: 15px;
+    margin: 1px;
+    padding: 3px 17px;
+   
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    width: 100%;
+    height: 400px;
+}
+.logindiv{
+width: 50%;
+align-items: center;
+display: flex;
+border: 2px solid red;
+justify-content: center;
+height: 200px;
+}
+.registerdiv{
+    width: 50%;
+align-items: center;
+display: flex;
+justify-content: center
+}
+
+
+
+.logI{
+    display: flex ;
+     padding: auto;
+     margin:auto;
+     align-items: center;
+
+}
+
+.security{
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    margin:2PX;
+
+}
+
+.sub{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(215, 215, 108);
+    border-radius: 11px;
+    
+}
+
+
+
+ 
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+    
+   
