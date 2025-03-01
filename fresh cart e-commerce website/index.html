@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel/dist/assets/owl.theme.default.min.css" />
+
+</head>
+<style>
+    .carousel-item {
+        align-items: center;
+        color: rgb(49, 50, 51);
+        height: 32rem;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        width: 85%;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+
+    }
+
+    .carousel-container {
+        position: absolute;
+
+
+    }
+
+    .carousel-caption {
+        top: 10%;
+
+        left: 5%;
+
+        right: 47%;
+        text-align: left;
+        transform: none;
+    }
+
+    .fea {
+        margin-top: 20px;
+        margin-left: 7%;
+    }
+
+    .owl-carousel {
+        width: 100%;
+        margin-left: 10px;
+
+    }
+
+    .owl-carousel .item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .owl-carousel .item .hhhih {
+        width: 50%;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .owl-carousel .item .hhhih:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(40, 188, 6, 0.3);
+    }
+
+    /* Customizing navigation arrows */
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        color: white !important;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .owl-prev {
+        left: -45px;
+    }
+
+    .owl-next {
+        right: -45px;
+    }
+
+    .owl-prev:hover,
+    .owl-next:hover {
+        background-color: rgba(69, 229, 25, 0.8) !important;
+    }
+
+    /* Customizing pagination dots */
+    .owl-dots {
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .owl-dots .owl-dot {
+        width: 12px;
+        height: 12px;
+        margin: 5px;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+    }
+
+    .owl-dots .owl-dot.active {
+        background-color: #007bff;
+    }
+
+    .custom-card .col {
+        margin-bottom: 15px;
+    }
+
+    .Categ li a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .Categ li a:hover {
+        color: #32CD32;
+    }
+</style>
+
+<body>
+    <div class=" bg-body-secondary d-flex" style=" height: 30px;  ">
+
+        <p class=" mt-1 text-dark d-flex " style="padding-left: 6rem; ">Super Value Deals - Save more with coupons </p>
+
+        <div class="dropdown d-flex " style="padding-left: 45rem;">
+            <button class=" btn dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                language
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">english</a></li>
+                <li><a class="dropdown-item" href="#">hindi</a></li>
+                <li><a class="dropdown-item" href="#">germn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="py-3">
+        <div class="container">
+            <div class="w-100 align-items-center gx-lg-2 gx-0 row">
+                <div class="col-xxl-2 col-lg-3 col-md-6 col-5">
+                    <a class="d-none d-lg-block navbar-brand" href="#"> <img src="freshcart-logo.svg"
+                            class="border-none " alt="cart"></a>
+                </div>
+                <div class="col-md-5">
+                    <form class="d-flex" role="search" style="display: block;position: relative;">
+                        <input
+                            class="form-control me-2 border border-1 border border-secondary bg-transparent rounded py-2 "
+                            type="search" placeholder="Search for the product" aria-label="Search">
+                        <i class="bi bi-search" style="position: absolute; right: 20px; top: 9px;"></i>
+                    </form>
+                </div>
+                <div class="d-none d-lg-block col-xxl-3 col-md-2  ">
+                    <a href="https://icons.getbootstrap.com/icons/heart/" target="_blank"> <button
+                            class="border border-1 border border-secondary bg-transparent rounded py-2 "><i
+                                class="bi bi-geo-alt"> Location</i>
+                        </button></a>
+                </div>
+                <div class="text-end col-xxl-2 col-lg-2 col-md-6 col-7 px-1">
+                    <div class="list-inline align-items-center">
+                        <div role="button" class="me-3 text-muted position-relative  list-inline-item">
+                            <a class="text-dark fs-5" href="#">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                        </div>
+                        <div role="button" class=" me-3 text-muted position-relative  list-inline-item">
+                            <a class="text-dark fs-5" href="#">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </div>
+                        <div role="button" class="me-3 text-muted position-relative  list-inline-item ">
+                            <a class="text-dark fs-5" href="#">
+                                <i class="bi bi-bag"></i>
+                            </a>
+                        </div>
+                        <div role="button" class="me-3 text-muted position-relative  list-inline-item ">
+                            <button type="button" aria-label="toggle navigation"
+                                class="navbar-toggler collapsed text-dark fs-4 align-items-center pt-2 ">
+                                <i class="bi bi-text-indent-left "></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--navigation-->
+    <nav class="py-1 justify-content-center ">
+        <div class="container ">
+            <div class="btn-group">
+                <div class="cont " style="position: relative;">
+                    <!--  -->
+                    <a href="#" class="btn text-white fs-6"
+                        style="background-color: #32CD32; border-radius: 5px; padding: 10px 20px ; font-size: 16px;"
+                        data-bs-toggle="collapse" data-bs-target="#department" <svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+                        stroke-linecap="round" stroke-linejoin="round" class="me-1">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>All department
+                    </a>
+
+                    <div id="department" style="position: absolute; width: 220px; z-index: 1; background-color: white;"
+                        class="collapse card card-body ">
+                        <div class="">
+                            <a href="#" class="text-dark d-flex gap-3 mt-1 align-items-center text-decoration-none">
+                                <ul class="list-unstyled   ">
+                                    <li class=""><a class="text-dark text-decoration-none " href="#">Dairy,bread &
+                                            eggs</a></li>
+                                    <li class=""><a class="text-dark text-decoration-none" href="#">snacks & munchies
+                                        </a></li>
+                                    <li class=""><a class="text-dark text-decoration-none" href="#">Fruits &
+                                            vegitables</a></li>
+                                    <li class=""><a class="text-dark text-decoration-none" href="#">cold drinks &
+                                            juices</a></li>
+                                    <li class=""><a class="text-dark text-decoration-none" href="#">Breakfast & instant
+                                            food</a></li>
+                                    <li class=""><a class="text-dark text-decoration-none" href="#">bakery & biscuit</a>
+                                    </li>
+                                    <li class=""><a class="text-dark text-decoration-none" href="#">chicken,meat &
+                                            fish</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group  ">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Home</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">home default</a></li>
+                        <li><a class="dropdown-item" href="#">home mordern</a></li>
+                        <li><a class="dropdown-item" href="#">home creative</a></li>
+                        <li><a class="dropdown-item" href="#">home loacal store</a></li>
+                        <li><a class="dropdown-item" href="#">home minimalist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group  ">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">shop</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">shop grid-filter</a></li>
+                        <li><a class="dropdown-item" href="#">shop grid- 3column</a></li>
+                        <li><a class="dropdown-item" href="#">shop list-filter</a></li>
+                        <li><a class="dropdown-item" href="#">shop filter</a></li>
+                        <li><a class="dropdown-item" href="#">shop wide</a></li>
+                        <li><a class="dropdown-item" href="#">shop single</a></li>
+                        <li><a class="dropdown-item" href="#">shop single v2</a></li>
+                        <li><a class="dropdown-item" href="#">shop wishlist</a></li>
+                        <li><a class="dropdown-item" href="#">shop cart</a></li>
+                        <li><a class="dropdown-item" href="#">shop checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group  ">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">store</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">store list</a></li>
+                        <li><a class="dropdown-item" href="#">store gride</a></li>
+                        <li><a class="dropdown-item" href="#">store single</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group  ">
+                <div class="dropdown" style="position: relative;">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Mega menu</button>
+
+                    <div class="container mt-2 dropdown-menu "
+                        style="width: 1500px; height: 340px;  padding-left:5px; margin-right: 50px !important;">
+                        <div class=" d-flex flex-container  mt-4" style="justify-content: flex-start;">
+
+                            <!-- Row 1 -->
+
+                            <div class="row1 mb-3" style="padding-left: 45px;">
+                                <div class=" "><a href="#" class="text-success text-decoration-none">
+                                        <h5 class="fs-6" style="width: 12rem; font-size: 15px;">Dairy, Bread & Eggs</h5>
+                                    </a></div>
+                                <div class="">
+                                    <ul class="list-unstyled mt-1">
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">butter</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">milk
+                                                drinks</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">curd &
+                                                yogurt</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Eggs</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Buns &
+                                                Bakery</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">cheese</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">condensed
+                                                milk</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Dairy
+                                                product</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- Row 2 -->
+                            <div class="row2 mb-5" style="padding-left:30px;">
+                                <div class=""><a href="#" class="text-success text-decoration-none">
+                                        <h5 class="fs-6" style="width: 14rem;">Breakfast & instant food</h5>
+                                    </a></div>
+                                <div class=" ">
+                                    <ul class="list-unstyled ">
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Breakfast
+                                                cereal</a></li>
+                                        <li class="mt-2"><a href="#"
+                                                class="text-dark text-decoration-none">noodles,pasta &
+                                                soup</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Frozen veg
+                                                snacks</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Frozen non
+                                                veg
+                                                snacks</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">instant
+                                                mixes</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Batter</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Fruit and
+                                                juices</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Row 3 -->
+                            <div class="row3 mb-3" style="padding-left:50px;">
+                                <div class=""><a href="#" class="text-success text-decoration-none">
+                                        <h5 class="fs-6" style="width: 12rem;">Cold Drinks & Juices</h5>
+                                    </a></div>
+                                <div class=" ">
+                                    <ul class="list-unstyled">
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">soft
+                                                Drinks</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Fruit and
+                                                juices</a></li>
+                                        <li class="mt-2"><a href="#"
+                                                class="text-dark text-decoration-none">coldpress</a>
+                                        </li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">water & ice
+                                                cubes</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">soda &
+                                                mixers</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">health
+                                                Drinks</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">Herbal
+                                                Drinks</a></li>
+                                        <li class="mt-2"><a href="#" class="text-dark text-decoration-none">milk
+                                                Drinks</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- row 4 -->
+                            <div class="row4 mb-3" style="padding-left: 70px;">
+
+                                <div class="  container mt-1">
+                                    <div class="image-container" style="  position: relative;
+                                    display: inline-block;
+                                ">
+                                        <a href="https://freshcart-next-js.vercel.app/" target="_blank"><img
+                                                src="menu-banner.jpg" class="img-fluid" alt="menu-banner"
+                                                style="height: 354px; width: 400px;padding-left: 70px;padding-bottom: 80px;"></a>
+                                        <div class="text-overlay " style="  position: absolute;
+                                        top: 10px;
+                                        left: 5rem;
+                                        color: rgb(72, 69, 69);
+                                        padding: 5px 10px;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        border-radius: 5px;">
+                                            <p class="" style="font-size: 19px;">dont miss this<br> offer today.</p>
+                                            <a href="#" class="btn btn-lg btn-success"
+                                                style="background-color: #32CD32;font-size: 13px;">shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="btn-group  ">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">pages</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">blog</a></li>
+                        <li><a class="dropdown-item" href="#">blog single</a></li>
+                        <li><a class="dropdown-item" href="#">blog category</a></li>
+                        <li><a class="dropdown-item" href="#">About us</a></li>
+                        <li><a class="dropdown-item" href="#">404 Error</a></li>
+                        <li><a class="dropdown-item" href="#">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group  ">
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">Account</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">sign in</a></li>
+                        <li><a class="dropdown-item" href="#">sign up</a></li>
+                        <li><a class="dropdown-item" href="#">forgot password</a></li>
+                        <li class="dropdown-submenu dropend">
+                            <a class="dropdown-item dropdown-toggle" href="#">my Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">orders</a></li>
+                                <li><a class="dropdown-item" href="#">settings</a></li>
+                                <li><a class="dropdown-item" href="#">Address</a></li>
+                                <li><a class="dropdown-item" href="#">payment method</a></li>
+                                <li><a class="dropdown-item" href="#">notification</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group px-1">
+                <a href="#" class="text-dark text-decoration-none ">dashboard </a>
+            </div>
+            <div class="btn-group ">
+                <div class="container " style="position: relative; ">
+                    <a href="#" class="btn text-dark fs-6" data-bs-toggle="collapse"
+                        data-bs-target="#toggleDivs">Docs</a>
+                    <div id="toggleDivs"
+                        style="position: absolute; width: 300px; z-index: 1; background-color: rgb(255, 255, 255);"
+                        class="collapse card card-body ">
+                        <div class="">
+                            <a href="#" class="text-dark d-flex gap-3 mt-1 align-items-center text-decoration-none"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="25" height="25"
+                                    fill="currentColor" class=" bi bi-file-text text-success">
+                                    <path
+                                        d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5M5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z mt-5">
+                                    </path>
+                                    <path
+                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1">
+                                    </path>
+                                </svg>
+                                <p class="p-0 m-0"><span class="fs-5">documentation</span><br>
+                                    browse all documentation.</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-dark d-flex gap-3 mt-2 align-items-center text-decoration-none"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="25" height="25"
+                                    fill="currentColor" class="bi bi-layers text-success">
+                                    <path
+                                        d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z">
+                                    </path>
+                                </svg>
+                                <p class="p-0 m-0"><span class="fs-5">changelog v1.0.0</span><br>
+                                    browse all documentation.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!--hr-->
+    <div>
+        <hr>
+    </div>
+<!--main-->
+    <main>
+        <!--SuperMarket-->
+        <section class="mt-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('slide-1.jpg');">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-start h-100">
+                            <span class="custom-badge text-bg-warning badge rounded-pill bg-warning">Opening Sale
+                                Discount 50%</span>
+                            <h2 class="text-dark display-5 fw-bold mt-4">SuperMarket For Fresh Grocery</h2>
+                            <p class="lead text-dark"> Introduced a new model for online grocery shopping and convenient
+                                home delivery.</p>
+                            <a role="button" tabindex="0" href="" class="mt-3 btn btn-dark">Show Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="ms-1">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('slide-2.jpg');">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-start h-100">
+                            <span class="custom-badge text-bg-warning badge rounded-pill bg-warning">free shipping
+                                -order over $100</span>
+                            <h2 class="text-dark display-5 fw-bold mt-4">Free Shipping on orders over<span
+                                    class="text-primary"> $100</span></h2>
+                            <p class="lead text-dark">Free Shipping to First-Time Customers Only, After promotions and
+                                discounts are applied.</p>
+                            <a role="button" tabindex="0" href="" class="mt-3 btn btn-dark">Show Now<svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="ms-1">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg></a>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!--next line featured catogories-->
+        <section>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <div style="width: 80%; ">
+                        <h3 style="width: 50%; margin-bottom: 20px;">featured catogories</h3>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item" style="padding-bottom: 20px;">
+                                <div class="hhhih"><img src="product-img-1.jpg" class="img-fluid" alt="Slide 1">chips
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"><img src="dairy-bread-eggs.jpg" class="img-fluid" alt="Slide 2">milk
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"> <img src="product-img-2.jpg" class="img-fluid"
+                                        alt="Slide 3">products</div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"><img src="snack-munchies.jpg" class="img-fluid" alt="Slide 4">snacks
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"> <img src="product-img-1.jpg" class="img-fluid" alt="Slide 1">chips
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"> <img src="dairy-bread-eggs.jpg" class="img-fluid" alt="Slide 2">milk
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"> <img src="product-img-2.jpg" class="img-fluid"
+                                        alt="Slide 3">products</div>
+                            </div>
+                            <div class="item">
+                                <div class="hhhih"><img src="snack-munchies.jpg" class="img-fluid" alt="Slide 4">snacks
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--grocery banner-->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="mb-3 mb-lg-0 col-md-6 col-12">
+                        <div class="py-3 rounded "
+                            style="background-image: url(grocery-banner.png); background-repeat:no-repeat;background-size: cover;height: 200px; background-position: center;">
+                            <div class="tex" style="padding-left: 45px;margin-top: 25px;">
+                                <h2 class="tex">Fruits & Vegetables</h2>
+                                <p class="tex">Get Upto 30% Off</p>
+                                <a href="#" class="tex">
+                                    <button class="tex px-1"
+                                        style="background-color: black;font-size:24px;color: white;border-radius: 10px;">shop
+                                        now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mb-lg-0 col-md-6 col-12">
+                        <div class="py-3 rounded "
+                            style="background-image: url(grocery-banner-2.jpg); background-repeat:no-repeat;background-size: cover;height: 200px; background-position: center;">
+                            <div class="tex" style="padding-left: 45px;margin-top: 25px;">
+                                <h2 class="tex">Freshly Baked Buns</h2>
+                                <p class="tex">Get Upto 25% Off</p>
+                                <a href="#" class="tex">
+                                    <button class="tex px-1"
+                                        style="background-color: black;font-size:24px;color: white;border-radius: 10px;">shop
+                                        now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--next line : popular products-->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="mb-5 col-12">
+                        <h2>popular products</h2>
+                    </div>
+                    <div class="row row-cols-lg-5 custom-card">
+
+                        <!--namkeen-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="product-img-1.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Snack &amp;
+                                                Munchies</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Haldiram's Sev Bhujia</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--biskeet-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="product-img-2.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Bakery &
+                                                Biscuits</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">NutriChoice Digestive</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--cadbury-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="catbuary.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Bakery &
+                                                Biscuits</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Cadbury 5 Star </a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center"><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--chips-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="lays.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Snack &
+                                                Munchies</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Onion Flavour Potato</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--popcorn-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="popcorn.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Instant Food</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">popcorn</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--cadbury-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="catbuary.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Bakery &
+                                                Biscuits</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Cadbury 5 star</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--namkeen -->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="product-img-1.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Snack &
+                                                Munchies</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Haldiram's Sev Bhujia </a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--bluebarry-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="bluebarry.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Dairy, Bread &
+                                                Eggs</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Blueberry Yogurt</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--cheese-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="cheese.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Dairy, Bread &
+                                                Eggs</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Britannia Cheese Slices</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--corn flakes-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="corn flakes.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Instant Food</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Kellogg's Original Cereals</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--bisckeet-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="product-img-2.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Bakery &
+                                                Biscuits</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">NutriChoice Digestive</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--pancake-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="pancake.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Snack &
+                                                Munchiess</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Slurrp Millet</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--butter-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="amul.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Dairy, Bread &
+                                                Eggs</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Amul butter</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--bisckeet-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="product-img-2.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Bakery &
+                                                Biscuits</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">NutriChoice Digestive</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--pancake-->
+                        <div class="col">
+                            <div class="card-product card">
+                                <div class="card-body">
+                                    <div class="text-center position-relative">
+                                        <div class="position-absolute top-0 start-0 ">
+                                            <div class="d-flex gap-1 flex-column"><span
+                                                    class="custom-badge  badge bg-danger">Sale</span><span
+                                                    class="custom-badge  badge bg-success">10%</span></div>
+                                        </div>
+                                        <a href="#"><img src="pancake.jpg" alt="product" class="mb-3 "
+                                                style="width:170px;"></a>
+                                        <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                                class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-eye">
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-heart">
+                                                </svg>
+                                                </svg>
+                                            </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                    class="bi bi-arrow-left-right"></svg>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-small mb-1">
+                                        <a class="text-decoration-none text-muted" href="#!"><small>Snack &
+                                                Munchies</small>
+                                        </a>
+                                    </div>
+                                    <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                            href="/shop/haldirams-sev-bhujia">Slurrp Millet</a></h2>
+                                    <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                            <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning"> </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                    height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-fill text-warning">
+
+                                                </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                                    width="12" height="12" fill="currentColor"
+                                                    class="bi bi-star-half text-warning">
+
+                                                </svg>
+                                            </div>
+                                        </small><span class="text-muted small">4.3 (4)</span></div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div><span class="text-dark">$21.6 </span><span
+                                                class="text-decoration-line-through text-muted">$24</span></div>
+                                        <div><a role="button" tabindex="0" href="#!"
+                                                class="btn btn-primary btn-sm btn btn-primary"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                </svg> Add</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--Daily Best Sells-->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row d-flex">
+                    <div class="mb-3 col-12">
+                        <h2>Daily Best Sells</h2>
+                    </div>
+                    <!--coffee-banner img-->
+                    <div class="col-3">
+                        <div class="mb-3 row col-3 rounded"
+                            style="background-image: url(coffee-banner.jpg);background-repeat: no-repeat;height: 28rem;width: 17rem;">
+                            <div class="mt-1 my-2">
+                                <h2 class="mt-3" style="color: white; margin-left: 15px;">100% Organic Coffee Beans.
+                                </h2>
+                                <p class="mt-2" style="color: white; font-size: 16px; margin-left: 15px;">Get the best
+                                    deal before <br> close.</p>
+                                <a role="button" href="#" class="btn rounded"
+                                    style="background-color: #32CD32;margin-left: 55px;color: white;">shop now </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-3">
+                        <div class="card-product card">
+                            <div class="card-body">
+                                <div class="text-center position-relative">
+                                    <a href="#"><img src="product-img-11.jpg" alt="product" class="mb-3 "
+                                            style="width:170px;"></a>
+                                    <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                            class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-eye">
+                                            </svg>
+                                        </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-heart">
+                                            </svg>
+                                            </svg>
+                                        </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-arrow-left-right"></svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="text-small mb-1">
+                                    <a class="text-decoration-none text-muted" href="#!"><small>Tea, Coffee &
+                                            Drinks</small>
+                                    </a>
+                                </div>
+                                <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                        href="/shop/haldirams-sev-bhujia">Roast Ground Coffee</a></h2>
+                                <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                        <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                class="bi bi-star-fill text-warning"> </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-half text-warning">
+
+                                            </svg>
+                                        </div>
+                                    </small><span class="text-muted small">4.3 (4)</span></div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div><span class="text-dark">$13.5 </span><span
+                                            class="text-decoration-line-through text-muted">$18</span></div>
+                                </div>
+                                <div class=" mt-3">
+                                    <a role="button" href="#" class="btn-action rounded"
+                                        style="background-color: #32CD32; text-decoration: none;  color: white; font-size: 15px;padding-left: 4rem;padding-right: 4rem;padding-top: 5px;padding-bottom: 7px;">
+                                        + Add to Cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-3">
+                        <div class="card-product card">
+                            <div class="card-body">
+                                <div class="text-center position-relative">
+                                    <a href="#"><img src="product-cento.jpg" alt="product" class="mb-3 "
+                                            style="width:170px;"></a>
+                                    <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                            class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-eye">
+                                            </svg>
+                                        </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-heart">
+                                            </svg>
+                                            </svg>
+                                        </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-arrow-left-right"></svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="text-small mb-1">
+                                    <a class="text-decoration-none text-muted" href="#!"><small>Fruits &
+                                            Vegetables</small>
+                                    </a>
+                                </div>
+                                <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                        href="/shop/haldirams-sev-bhujia">Crushed Tomatoes</a></h2>
+                                <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                        <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                class="bi bi-star-fill text-warning"> </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-half text-warning">
+
+                                            </svg>
+                                        </div>
+                                    </small><span class="text-muted small">4.3 (4)</span></div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div><span class="text-dark">$13.5 </span><span
+                                            class="text-decoration-line-through text-muted">$18</span></div>
+                                </div>
+                                <div class=" mt-3">
+                                    <a role="button" href="#" class="btn-action rounded"
+                                        style="background-color: #32CD32; text-decoration: none;  color: white; font-size: 15px;padding-left: 4rem;padding-right: 4rem;padding-top: 5px;padding-bottom: 7px;">
+                                        + Add to Cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 col-3">
+                        <div class="card-product card">
+                            <div class="card-body">
+                                <div class="text-center position-relative">
+                                    <a href="#"><img src="pinapple.jpg" alt="product" class="mb-3 "
+                                            style="width:170px;"></a>
+                                    <div class="card-product-action d-flex gap-1 justify-content-center"><a
+                                            class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-eye">
+                                            </svg>
+                                        </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-heart">
+                                            </svg>
+                                            </svg>
+                                        </a><a class="btn-action" href=""><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
+                                                class="bi bi-arrow-left-right"></svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="text-small mb-1">
+                                    <a class="text-decoration-none text-muted" href="#!"><small>Fruits &
+                                            Vegetables</small>
+                                    </a>
+                                </div>
+                                <h2 class="fs-6"><a class="text-inherit text-decoration-none"
+                                        href="/shop/haldirams-sev-bhujia">Golden Pineapple</a></h2>
+                                <div class="d-inline-flex gap-1 align-items-center "><small class="text-warning">
+                                        <div class="d-flex gap-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 16 16" width="12" height="12" fill="currentColor"
+                                                class="bi bi-star-fill text-warning"> </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-fill text-warning">
+
+                                            </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12"
+                                                height="12" fill="currentColor" class="bi bi-star-half text-warning">
+
+                                            </svg>
+                                        </div>
+                                    </small><span class="text-muted small">4.3 (4)</span></div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div><span class="text-dark">$13.5 </span><span
+                                            class="text-decoration-line-through text-muted">$18</span></div>
+                                </div>
+                                <div class=" mt-3">
+                                    <a role="button" href="#" class="btn-action rounded"
+                                        style="background-color: #32CD32; text-decoration: none;  color: white; font-size: 15px;padding-left: 4rem;padding-right: 4rem;padding-top: 5px;padding-bottom: 7px;">
+                                        + Add to Cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--feedback-->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row d-flex">
+                    <!--clock-->
+                    <div class="col-3">
+                        <div class="row col-12">
+                            <a><img src="clock.svg" alt="clock" style="height: 40px;width: 40px;"></a>
+                            <h5 class="mt-3">10 minute grocery now</h5>
+                            <p class="mt-2" style="color: grey;font-size: 14px;">Get your order delivered to your
+                                doorstep at the earliest from FreshCart pickup stores near you.</p>
+                        </div>
+                    </div>
+
+                    <!--offers-->
+                    <div class="col-3">
+                        <div class="row col-12">
+                            <a><img src="gift.svg" alt="clock" style="height: 40px;width: 40px;"></a>
+                            <h5 class="mt-3">Best Prices & Offers</h5>
+                            <p class="mt-2" style="color: grey;font-size: 14px;">Cheaper prices than your local
+                                supermarket, great cashback offers to top it off. Get best pricess & offers..</p>
+                        </div>
+                    </div>
+
+                    <!--box-->
+                    <div class="col-3">
+                        <div class="row col-12">
+                            <a><img src="box-seam.svg" alt="clock" style="height: 40px;width: 40px;"></a>
+                            <h5 class="mt-3">Wide Assortment</h5>
+                            <p class="mt-2" style="color: grey; font-size: 14px;">Choose from 5000+ products across
+                                food, personal care, household, bakery, veg and non-veg & other categories.</p>
+                        </div>
+                    </div>
+
+                    <!--sync-->
+                    <div class="col-3">
+                        <div class="row col-12">
+                            <a><img src="sync.svg" alt="clock" style="height: 40px;width: 40px;"></a>
+                            <h5 class="mt-3">Easy Returns</h5>
+                            <p class="mt-2" style="color: grey;font-size: 14px;">Not satisfied with a product? Return it
+                                at the doorstep & get a refund within hours. No questions asked policy .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!--footer-->
+    <footer class=" bg-body-secondary" style="margin-top: 9rem;">
+        <div class="container ">
+            <div class="row  d-flex">
+                <!--catagories-->
+                <div class="col-4">
+                    <h6 class="" style="margin-top: 6rem;">Categories</h6>
+                    <div class="d-flex ">
+                        <ul class="Categ mt-2" style="list-style: none;text-align: start;padding: 0px;">
+                            <li><a class="Categ" href="#">Vegetables & Fruits</a></li>
+                            <li><a class="Categ" href="#">Breakfast & instant food</a></li>
+                            <li><a class="Categ" href="#">Bakery & Biscuits</a></li>
+                            <li><a class="Categ" href="#">Atta, rice & dal</a></li>
+                            <li><a class="Categ" href="#">Sauces & spreads</a></li>
+                            <li><a class="Categ" href="#">Organic & gourmet</a></li>
+                            <li><a class="Categ" href="#">Baby care</a></li>
+                            <li><a class="Categ" href="#">Cleaning essentials</a></li>
+                            <li><a class="Categ" href="#">Personal care</a></li>
+                        </ul>
+                        <ul class="Categ mt-2" style="list-style: none;text-align: start;padding-left:30px;">
+                            <li><a class="Categ" href="#">Dairy, bread & eggs</a></li>
+                            <li><a class="Categ" href="#">Cold drinks & juices</a></li>
+                            <li><a class="Categ" href="#">Tea, coffee & drinks</a></li>
+                            <li><a class="Categ" href="#">Masala, oil & more</a></li>
+                            <li><a class="Categ" href="#">Chicken, meat & fish</a></li>
+                            <li><a class="Categ" href="#">Paan corner</a></li>
+                            <li><a class="Categ" href="#">Pharma & wellness</a></li>
+                            <li><a class="Categ" href="#">Home & office</a></li>
+                            <li><a class="Categ" href="#">Pet care</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!--get to know-->
+                <div class="col-2">
+                    <h6 class="" style="margin-top: 6rem;">Get to know us</h6>
+                    <div class="d-flex ">
+                        <ul class="Categ mt-2" style="list-style: none;text-align: start;padding: 0px;">
+                            <li><a class="Categ" href="#">Company</a></li>
+                            <li><a class="Categ" href="#">About</a></li>
+                            <li><a class="Categ" href="#">Blog</a></li>
+                            <li><a class="Categ" href="#">Help Center</a></li>
+                            <li><a class="Categ" href="#">Our Value</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--for consumers-->
+                <div class="col-2">
+                    <h6 class="" style="margin-top: 6rem;">For Consumers</h6>
+                    <div class="d-flex ">
+                        <ul class="Categ mt-2" style="list-style: none;text-align: start;padding: 0px;">
+                            <li><a class="Categ" href="#">Payments</a></li>
+                            <li><a class="Categ" href="#">Shipping</a></li>
+                            <li><a class="Categ" href="#">Product Returns</a></li>
+                            <li><a class="Categ" href="#">FAQ</a></li>
+                            <li><a class="Categ" href="#">Shop Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--Become a Shopper-->
+                <div class=" col-2">
+                    <h6 class="" style="margin-top: 6rem;">Become a Shopper</h6>
+                    <div class="d-flex ">
+                        <ul class="Categ mt-2" style="list-style: none;text-align: start;padding: 0px;">
+                            <li><a class="Categ" href="#">Shopper Opportunities</a></li>
+                            <li><a class="Categ" href="#">Become a Shopper</a></li>
+                            <li><a class="Categ" href="#">Earnings</a></li>
+                            <li><a class="Categ" href="#">Ideas & Guides</a></li>
+                            <li><a class="Categ" href="#">New Retailers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--freshcart-->
+                <div class="col-2">
+                    <h6 class="" style="margin-top: 6rem;">Freshcart programs</h6>
+                    <div class="d-flex ">
+                        <ul class="Categ mt-2" style="list-style: none;text-align: start;padding: 0px;">
+                            <li><a class="Categ" href="#">Freshcart programs</a></li>
+                            <li><a class="Categ" href="#">Gift Cards</a></li>
+                            <li><a class="Categ" href="#">Promos & Coupons</a></li>
+                            <li><a class="Categ" href="#">Freshcart Ads</a></li>
+                            <li><a class="Categ" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--hr-->
+                <div class="mt-3">
+                    <hr>
+                </div>
+
+                <!--payment and store-->
+
+                <div class="mt-1 row d-flex">
+                    <!--left div-->
+                    <div class="col-md-6 mt-2">
+                        <span>Payment Partners</span>
+                        <a href><img src="amazonpay.svg" alt="#"></a>
+                        <a href><img src="american-express.svg" alt="#"></a>
+                        <a href><img src="mastercard.svg" alt="#"></a>
+                        <a href><img src="paypal.svg" alt="#"></a>
+                        <a href><img src="visa.svg" alt="#"></a>
+                    </div>
+                    <!--right div-->
+                    <div class="col-md-6">
+                        <span class="" style="font-size: 15px; margin-right: 2px;">Get deliveries with FreshCart</span>
+                        <a><img src="appstore-btn.svg" alt="#" style="height: 3rem;width: 10rem; margin-left: 2px;"></a>
+                        <a><img src="googleplay-btn.svg" alt="#"
+                                style="height: 3rem;width: 10rem;margin-left: 2px;"></a>
+                    </div>
+                </div>
+
+                <!--bottom hr-->
+                <div>
+                    <hr>
+                </div>
+                <!--footer end-->
+                <!--div left side-->
+                <div class="mt-2 row d-flex">
+                    <div class="col-md-6">
+                        <p class="" style="font-size: 14px; color: gray;"> © 2022 - 2025 FreshCart eCommerce HTML
+                            Template. All rights reserved. Powered by <a href="#"
+                                style="color: #32CD32;text-decoration: none;">Codescandy.</a></p>
+                    </div>
+
+
+                    <!--div right side-->
+                    <div class="col-md-6" style="padding-left:26rem;">
+                        <span style="color: gray;">follow us</span>
+                        <a role="button" href="#"><img src="facebook.svg" alt=""></a>
+                        <a role="button" href="#"><img src="twitter.svg" alt=""></a>
+                        <a role="button" href="#"><img src="instagram.svg" alt=""></a>
+                    </div>
+                </div>
+
+            </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 5, // Show 3 slides at a time
+                loop: true, // Enable infinite loop
+                nav: false, // Show navigation arrows
+                dots: false, // Show pagination dots
+                autoplay: true, // Auto-play enabled
+                autoplayTimeout: 3000, // Auto-play speed (3 seconds)
+                autoplayHoverPause: true, // Pause autoplay on hover
+                responsive: {
+                    0: { items: 1 }, // 1 item on mobile
+                    600: { items: 3 }, // 2 items on tablets
+                    1000: { items: 5 } // 3 items on desktop
+                }
+            });
+        })
+    </script>
+
+</body>
+
+</html>
